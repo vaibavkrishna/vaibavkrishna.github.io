@@ -7,10 +7,11 @@ ul,
 li {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Add box-sizing property */
 }
 
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -27,59 +28,35 @@ h1 {
 }
 
 /* Contact Info Styles */
-.contact-info {
-    background-color: #f8f8f8;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.contact-info p {
-    margin-bottom: 10px;
-}
-
-/* Education Styles */
+.contact-info,
 .education,
 .certificates,
 .skills {
+    box-sizing: border-box; /* Add box-sizing property */
+    width: 100%; /* Set a width for the containers */
     background-color: #f8f8f8;
     padding: 20px;
     margin-top: 20px;
 }
 
+.contact-info p,
 .education h2,
 .certificates h2,
 .skills h2 {
     margin-bottom: 10px;
 }
 
+.contact-info p,
 .education ul,
 .certificates ul,
 .skills ul {
-    list-style-type: none;
-}
-
-.education li,
-.certificates li,
-.skills li {
-    margin-bottom: 8px;
-}
-
-/* Responsive Design Styles */
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 10px;
-    }
-
-    .contact-info,
-    .education,
-    .certificates,
-    .skills {
-        padding: 10px;
-    }
+    margin-bottom: 10px;
 }
 
 /* Updated Styles for Vertical Arrangement */
 .container {
+    box-sizing: border-box; /* Add box-sizing property */
+    width: 100%; /* Set a width for the container */
     display: flex;
     flex-direction: column;
     align-items: center;

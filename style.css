@@ -1,51 +1,62 @@
+/* style.css */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Change from center to flex-start */
-    min-height: 100vh; /* Use min-height instead of height */
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
 }
 
-h1, h2, h3 {
-    margin-bottom: 10px;
+h1 {
+  margin: 10px 0;
 }
 
-.contact-info,
+.contact-info {
+  margin: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #000;
+  text-decoration: none;
+}
+
 .education,
 .certificates,
 .skills {
-    width: 80%; /* Adjust the width as needed */
-    max-width: 600px; /* Set a maximum width for better readability on larger screens */
-    margin-bottom: 30px;
+  margin: 20px;
+}
+
+h2 {
+  margin: 10px 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
 }
 
 li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+a {
+  color: #0000EE;
+  text-decoration: underline;
 }
 
-.left-column {
-    width: 50%;
-}
-
-.right-column {
-    width: 50%;
+a:hover {
+  color: #FF0000;
 }

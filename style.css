@@ -1,67 +1,37 @@
-/* Resetting some default styles */
-body,
-h1,
-h2,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Add box-sizing property */
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Header Styles */
-header {
-    background-color: #f0f0f0;
+.container {
+    max-width: 800px;
     padding: 20px;
+}
+
+header {
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 10px;
-}
-
-/* Contact Info Styles */
-.contact-info,
-.education,
-.certificates,
-.skills {
-    box-sizing: border-box; /* Add box-sizing property */
-    width: 100%; /* Set a width for the containers */
-    background-color: #f8f8f8;
-    padding: 20px;
+.contact-info, .education, .certificates, .skills {
     margin-top: 20px;
 }
 
-.contact-info p,
-.education h2,
-.certificates h2,
-.skills h2 {
-    margin-bottom: 10px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.contact-info p,
-.education ul,
-.certificates ul,
-.skills ul {
-    margin-bottom: 10px;
+li {
+    margin-bottom: 5px;
 }
 
-/* Updated Styles for Vertical Arrangement */
-.container {
-    box-sizing: border-box; /* Add box-sizing property */
-    width: 100%; /* Set a width for the container */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container > * {
-    margin-bottom: 20px;
+@media only screen and (max-width: 600px) {
+    /* Add responsive styles as needed */
+    .container {
+        padding: 10px;
+    }
 }

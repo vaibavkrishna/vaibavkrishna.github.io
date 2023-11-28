@@ -20,7 +20,7 @@ h1, h2, h3 {
 
 .contact-info,
 .education,
-.experience,
+.certificates,
 .skills {
     width: 80%; /* Adjust the width as needed */
     max-width: 600px; /* Set a maximum width for better readability on larger screens */
